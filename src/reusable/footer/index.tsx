@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="FooterContents">
       <div className="FooterContentsItem">
         <strong className="FooterContentsItem__title">고객상담센터</strong>
-        <em className="FooterContentsItem__center-tel">080-860-8388</em>
+        <em className="FooterContentsItem__center-tel">02-6949-3414</em>
         <ul className="FooterContentsItem__center-list">
           <li>평일 AM9:00 ~ PM6:00</li>
           <li>토요일 AM9:00 ~ PM12:00</li>
@@ -27,15 +27,18 @@ const Footer = () => (
           </li>
           <li className="FooterContentsItem__info-item">
             <strong>주소 :</strong>
-            <span>경기도 구리시 갈매동 229-6</span>
+            <span>
+              서울특별시 중랑구 신내역로3길 40-36 (신내동) 데시앙플렉스 FB 지하
+              2층 216, 217, 218호
+            </span>
           </li>
           <li className="FooterContentsItem__info-item">
             <strong>전화번호 :</strong>
-            <span>031-575-6618~9</span>
+            <span>02-6949-3413</span>
           </li>
           <li className="FooterContentsItem__info-item">
             <strong>팩스번호 :</strong>
-            <span>031-575-6639</span>
+            <span>02-6949-3414</span>
           </li>
           <li className="FooterContentsItem__info-item">
             <strong>대표 :</strong>

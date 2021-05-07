@@ -22,7 +22,7 @@ const Introduce = () => {
   return (
     <div className="Introduce">
       <SubTitle title="회사소개" />
-      <Tab data={IntroduceTabData} activeTab={activeTab} />
+      <Tab tabData={IntroduceTabData} activeTab={activeTab} />
       <Waypoint
         onEnter={() => {
           setActiveTab("#greeting");
@@ -57,24 +57,24 @@ const Introduce = () => {
 const IntroduceTabData = [
   {
     label: "인사말",
-    url: "#greeting"
+    url: "#greeting",
   },
   {
     label: "리빙웰",
-    url: "#livingWell"
+    url: "#livingWell",
   },
   {
     label: "핵심가치",
-    url: "#values"
+    url: "#values",
   },
   {
     label: "주요 생산 품목",
-    url: "#itemsDescription"
+    url: "#itemsDescription",
   },
   {
     label: "회사연혁",
-    url: "#history"
-  }
+    url: "#history",
+  },
 ];
 
 export default Introduce;

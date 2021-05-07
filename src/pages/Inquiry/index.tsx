@@ -20,7 +20,7 @@ const InquiryItem = ({ title, answer }: InquiryItemPops) => (
 const Inquiry = () => (
   <div className="Inquiry">
     <SubTitle title="문의하기" />
-    <div className="LaytoutContents__sub">
+    <div className="LayoutContents__sub">
       <h3 className="Mixin__title Mixin__title--left">FAQ</h3>
       <h4 className="Mixin__title-bar Mixin__title-bar--left">
         가장 빈번한 문의사항들을 모아놨습니다.
@@ -54,7 +54,7 @@ const InquiryItemData = [
         품질의 제품을 파트너들에게 원활하게 공급하고 있습니다. 만족스러운 품질을
         보장하고 납기일을 준수하여 든든한 동반자가 되어 드리겠습니다.
       </p>
-    )
+    ),
   },
   {
     title: "Q. 제품소개에 소개된 제품 이외의 취급하는 제품이 있나요?",
@@ -66,7 +66,7 @@ const InquiryItemData = [
         있는 제품군 내에서 OEM 제품 생산을 요청하시는 경우는 맞춤생산을 해드릴
         수 있습니다.
       </p>
-    )
+    ),
   },
   {
     title: "Q. 일반 소비자들도 제품을 구매할 수 있나요?",
@@ -77,7 +77,7 @@ const InquiryItemData = [
         하기에는 무리가 있습니다. 저희 제품을 구매하고자 하는 일반 소비자분들은
         저희 제품을 취급하는 마트나 편의점을 이용하시길 바랍니다.
       </p>
-    )
+    ),
   },
   {
     title: "Q. 우진위생산업 제품의 견적을 문의하고 싶습니다.",
@@ -88,8 +88,8 @@ const InquiryItemData = [
         입니다. 홈페이지 하단을 확인하셔서 언제든지 전화 주시면 친절하게 상담해
         드리겠습니다.
       </p>
-    )
-  }
+    ),
+  },
 ];
 
 export default Inquiry;

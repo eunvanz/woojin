@@ -15,7 +15,7 @@ const Gnb = () => (
           <NavLink to="/introduce" activeClassName="GnbItem--selected">
             회사소개
           </NavLink>
-          <ul className="GnbItem-dropdowon">
+          {/* <ul className="GnbItem-dropdowon">
             <li>
               <NavLink to="">인사말</NavLink>
             </li>
@@ -31,13 +31,13 @@ const Gnb = () => (
             <li>
               <NavLink to="">리빙웰이란?</NavLink>
             </li>
-          </ul>
+          </ul> */}
         </li>
         <li className="GnbItem">
           <NavLink to="/products" activeClassName="GnbItem--selected">
             제품소개
           </NavLink>
-          <ul className="GnbItem-dropdowon">
+          {/* <ul className="GnbItem-dropdowon">
             <li>
               <NavLink to="">전체</NavLink>
             </li>
@@ -59,7 +59,7 @@ const Gnb = () => (
             <li>
               <NavLink to="">OEM제품</NavLink>
             </li>
-          </ul>
+          </ul> */}
         </li>
         <li className="GnbItem">
           <NavLink to="/inquiry" activeClassName="GnbItem--selected">

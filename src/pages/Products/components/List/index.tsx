@@ -83,7 +83,7 @@ const ProductsList = ({ onChangeSection }: ProductsListProps) => (
     />
     <ProductsTitle id="chopstick" title="나무젓가락" />
     <ProductsItem
-      data={ProductsItemData.filter(item => item.group === "chopstick")}
+      data={ProductsItemData.filter((item) => item.group === "chopstick")}
     />
 
     <Waypoint
@@ -92,7 +92,7 @@ const ProductsList = ({ onChangeSection }: ProductsListProps) => (
     />
     <ProductsTitle id="toothpick" title="이쑤시개" />
     <ProductsItem
-      data={ProductsItemData.filter(item => item.group === "toothpick")}
+      data={ProductsItemData.filter((item) => item.group === "toothpick")}
     />
 
     <Waypoint
@@ -101,7 +101,7 @@ const ProductsList = ({ onChangeSection }: ProductsListProps) => (
     />
     <ProductsTitle id="stick" title="꼬지" />
     <ProductsItem
-      data={ProductsItemData.filter(item => item.group === "stick")}
+      data={ProductsItemData.filter((item) => item.group === "stick")}
     />
 
     <Waypoint
@@ -110,7 +110,7 @@ const ProductsList = ({ onChangeSection }: ProductsListProps) => (
     />
     <ProductsTitle id="cottonswab" title="면봉" />
     <ProductsItem
-      data={ProductsItemData.filter(item => item.group === "cottonswab")}
+      data={ProductsItemData.filter((item) => item.group === "cottonswab")}
     />
 
     <Waypoint
@@ -119,7 +119,7 @@ const ProductsList = ({ onChangeSection }: ProductsListProps) => (
     />
     <ProductsTitle id="etc" title="기타" />
     <ProductsItem
-      data={ProductsItemData.filter(item => item.group === "etc")}
+      data={ProductsItemData.filter((item) => item.group === "etc")}
     />
 
     <Waypoint
@@ -128,7 +128,7 @@ const ProductsList = ({ onChangeSection }: ProductsListProps) => (
     />
     <ProductsTitle id="oem" title="OEM" />
     <ProductsItem
-      data={ProductsItemData.filter(item => item.group === "oem")}
+      data={ProductsItemData.filter((item) => item.group === "oem")}
     />
   </>
 );
@@ -149,7 +149,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "chopstick",
@@ -162,7 +162,7 @@ const ProductsItemData = [
         재질 : 백양목 <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "chopstick",
@@ -178,7 +178,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "chopstick",
@@ -192,7 +192,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "chopstick",
@@ -208,7 +208,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "chopstick",
@@ -221,7 +221,7 @@ const ProductsItemData = [
         재질 : 백양목 <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "chopstick",
@@ -235,7 +235,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "chopstick",
@@ -249,7 +249,7 @@ const ProductsItemData = [
         <br />
         재질 : 백양목 원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "chopstick",
@@ -265,12 +265,12 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "chopstick",
     imgUrl: chopsticks10,
-    label: "리빙웰 나무젓가락 박스"
+    label: "리빙웰 나무젓가락 박스",
   },
   {
     group: "chopstick",
@@ -286,12 +286,12 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "chopstick",
     imgUrl: chopsticks12,
-    label: "나무젓가락 제품 모음"
+    label: "나무젓가락 제품 모음",
   },
   {
     group: "chopstick",
@@ -305,12 +305,12 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "chopstick",
     imgUrl: chopsticks14,
-    label: "알저 모음"
+    label: "알저 모음",
   },
   {
     group: "chopstick",
@@ -326,14 +326,14 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
 
   // 이쑤시개
   {
     group: "toothpick",
     imgUrl: toothpick1,
-    label: "이쑤시개 모음"
+    label: "이쑤시개 모음",
   },
   {
     group: "toothpick",
@@ -347,7 +347,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "toothpick",
@@ -361,7 +361,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "toothpick",
@@ -375,7 +375,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "toothpick",
@@ -389,7 +389,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "toothpick",
@@ -403,7 +403,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "toothpick",
@@ -417,7 +417,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "toothpick",
@@ -431,7 +431,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "toothpick",
@@ -445,7 +445,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "toothpick",
@@ -459,7 +459,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "toothpick",
@@ -473,7 +473,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "toothpick",
@@ -487,12 +487,12 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "toothpick",
     imgUrl: toothpick13,
-    label: "이쑤시개 & 꽂이 제품 모음"
+    label: "이쑤시개 & 꽂이 제품 모음",
   },
 
   //꼬지
@@ -507,12 +507,12 @@ const ProductsItemData = [
         재질 : 자작나무 외<br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "stick",
     imgUrl: stick2,
-    label: "꼬지모음"
+    label: "꼬지모음",
   },
   {
     group: "stick",
@@ -528,7 +528,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "stick",
@@ -542,7 +542,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "stick",
@@ -559,7 +559,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "stick",
@@ -572,7 +572,7 @@ const ProductsItemData = [
         재질 : 자작나무 외<br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "stick",
@@ -588,7 +588,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
 
   //면봉
@@ -604,12 +604,12 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "cottonswab",
     imgUrl: cottonswab2,
-    label: "면봉모음"
+    label: "면봉모음",
   },
   {
     group: "cottonswab",
@@ -623,7 +623,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "cottonswab",
@@ -637,7 +637,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "cottonswab",
@@ -651,12 +651,12 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "cottonswab",
     imgUrl: cottonswab6,
-    label: "면봉 제품 모음"
+    label: "면봉 제품 모음",
   },
   {
     group: "cottonswab",
@@ -670,7 +670,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
 
   //기타
@@ -686,7 +686,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "etc",
@@ -700,7 +700,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "etc",
@@ -716,7 +716,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "etc",
@@ -728,7 +728,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "etc",
@@ -744,7 +744,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "etc",
@@ -756,7 +756,7 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "etc",
@@ -772,44 +772,44 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "etc",
     imgUrl: etc8,
-    label: "장갑, 김발, 꼬지 모음"
+    label: "장갑, 김발, 꼬지 모음",
   },
 
   //OEM 제품
   {
     group: "oem",
     imgUrl: oem1,
-    label: "오피스디포 목장갑 & 반코팅장갑"
+    label: "오피스디포 목장갑 & 반코팅장갑",
   },
   {
     group: "oem",
     imgUrl: oem2,
-    label: "삼아알미늄 면봉 & 이쑤시개"
+    label: "삼아알미늄 면봉 & 이쑤시개",
   },
   {
     group: "oem",
     imgUrl: oem3,
-    label: "세원종합유통 이쑤시개 & 면봉"
+    label: "세원종합유통 이쑤시개 & 면봉",
   },
   {
     group: "oem",
     imgUrl: oem4,
-    label: "알파문구 이쑤시개 & 면봉"
+    label: "알파문구 이쑤시개 & 면봉",
   },
   {
     group: "oem",
     imgUrl: oem5,
-    label: "다이소 나무젓가락 & 이쑤시개"
+    label: "다이소 나무젓가락 & 이쑤시개",
   },
   {
     group: "oem",
     imgUrl: oem6,
-    label: "화미제당 나무젓가락 모음"
+    label: "화미제당 나무젓가락 모음",
   },
   {
     group: "oem",
@@ -825,13 +825,13 @@ const ProductsItemData = [
         <br />
         원산지 : 중국
       </div>
-    )
+    ),
   },
   {
     group: "oem",
     imgUrl: oem8,
-    label: "대상티엘에스 나무젓가락"
-  }
+    label: "대상티엘에스 나무젓가락",
+  },
 ];
 
 export default ProductsList;

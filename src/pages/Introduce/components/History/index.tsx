@@ -14,7 +14,7 @@ import historyHat from "../../../../assets/images/history-hat.jpeg";
 
 const History = () => (
   <div id="history" className="History">
-    <div className="LaytoutContents__sub">
+    <div className="LayoutContents__sub">
       <div className="History__title">
         <h3 className="Mixin__title">
           <i>회사연혁</i>

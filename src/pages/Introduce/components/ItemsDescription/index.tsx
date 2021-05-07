@@ -2,7 +2,7 @@ import "./style.scss";
 
 const ItemsDescription = () => (
   <div id="itemsDescription" className="ItemsDescription">
-    <div className="LaytoutContents__sub">
+    <div className="LayoutContents__sub">
       <div className="ItemsDescription__inner">
         <div className="ItemsDescription__title">
           <h3 className="Mixin__title Mixin__title--left">주요 생산 품목</h3>
