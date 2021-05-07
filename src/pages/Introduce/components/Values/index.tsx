@@ -6,7 +6,7 @@ import iconHappiness from "../../../../assets/images/icon-happiness.png";
 
 const Values = () => (
   <div id="values" className="Values">
-    <div className="LaytoutContents__sub">
+    <div className="LayoutContents__sub">
       <h3 className="Mixin__title">
         <i>핵심가치</i>
       </h3>

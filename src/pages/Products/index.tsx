@@ -14,9 +14,9 @@ const Products = () => {
   return (
     <div className="Products">
       <SubTitle title="제품소개" />
-      <Tab data={ProductsTabData} activeTab={activeTab} />
-      <div className="LaytoutContents__sub">
-        <ProductsList onChangeSection={section => setActiveTab(section)} />
+      <Tab tabData={ProductsTabData} activeTab={activeTab} />
+      <div className="LayoutContents__sub">
+        <ProductsList onChangeSection={(section) => setActiveTab(section)} />
       </div>
     </div>
   );
@@ -25,28 +25,28 @@ const Products = () => {
 const ProductsTabData = [
   {
     label: "나무젓가락",
-    url: "#chopstick"
+    url: "#chopstick",
   },
   {
     label: "이쑤시개",
-    url: "#toothpick"
+    url: "#toothpick",
   },
   {
     label: "꼬지",
-    url: "#stick"
+    url: "#stick",
   },
   {
     label: "면봉",
-    url: "#cottonswab"
+    url: "#cottonswab",
   },
   {
     label: "기타",
-    url: "#etc"
+    url: "#etc",
   },
   {
     label: "OEM 제품",
-    url: "#oem"
-  }
+    url: "#oem",
+  },
 ];
 
 export default Products;

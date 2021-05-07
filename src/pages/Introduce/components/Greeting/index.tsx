@@ -2,7 +2,7 @@ import "./style.scss";
 
 const Greeting = () => (
   <div id="greeting" className="Greeting">
-    <div className="LaytoutContents__sub">
+    <div className="LayoutContents__sub">
       <div className="Greeting__inner">
         <div className="Greeting__title">
           <h3 className="Mixin__title Mixin__title--left">

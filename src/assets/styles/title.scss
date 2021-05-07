@@ -58,7 +58,7 @@
     @include TitleBar(120px);
   }
 
-  .LaytoutContents__sub & {
+  .LayoutContents__sub & {
     &:after {
       width: 50px;
     }

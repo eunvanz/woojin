@@ -4,7 +4,7 @@ import livingBg from "../../../../assets/images/bg-living.png";
 
 const LivingWell = () => (
   <div id="livingWell" className="LivingWell">
-    <div className="LaytoutContents__sub">
+    <div className="LayoutContents__sub">
       <h3 className="Mixin__title">
         우진위생산업의 또다른 브랜드 <i>리빙웰</i>
       </h3>
