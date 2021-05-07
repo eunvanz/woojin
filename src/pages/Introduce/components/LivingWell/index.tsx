@@ -1,6 +1,6 @@
 import "./style.scss";
 
-import livingBg from "../../../../assets/images/bg-living.jpeg";
+import livingBg from "../../../../assets/images/bg-living.png";
 
 const LivingWell = () => (
   <div id="livingWell" className="LivingWell">
