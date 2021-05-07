@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Router, Switch, Route } from "react-router-dom";
+
+import browserHistory from "./router/history";
+
+import Header from "./reusable/header";
+import Footer from "./reusable/footer";
+
+import Home from "./pages/Home";
+import Introduce from "./pages/Introduce";
+import Products from "./pages/Products";
+import Inquiry from "./pages/Inquiry";
+
+browserHistory.listen((location, action) => {
+  if (action === "PUSH") {
+    if (!location.hash) {
+      window.scrollTo(0, 0);
+    }
+  }
+});
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router history={browserHistory}>
+        <Header />
+        <Switch>
+          <Route path="/inquiry" component={Inquiry} />
+          <Route path="/introduce" component={Introduce} />
+          <Route path="/products" component={Products} />
+          <Route exact path="/" component={Home} />
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }

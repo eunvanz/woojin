@@ -1,0 +1,62 @@
+@import "../../assets/styles/mixin.scss";
+
+@mixin LinkStyle {
+  color: #000;
+  font-weight: 700;
+  border-radius: 30px;
+  background-color: #f1c40f;
+  @media (max-width: 999px) {
+    border-radius: 20px;
+  }
+}
+
+.Tab {
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+  margin: 0 0 60px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  @media (max-width: 999px) {
+    top: 128px;
+  }
+}
+
+.TabList {
+  @include WidthLayout;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.TabItem {
+  width: 100%;
+  a {
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 5px;
+    padding: 0 20px;
+    color: #000;
+    font-size: 18px;
+    line-height: 120%;
+    @media (max-width: 999px) {
+      height: 40px;
+      padding: 0 10px;
+      font-size: 14px;
+    }
+    &:hover {
+      @include LinkStyle;
+    }
+  }
+}
+
+.TabItem--selected {
+  a {
+    @include LinkStyle;
+  }
+}

@@ -1,0 +1,71 @@
+@import "../../assets/styles/mixin.scss";
+
+.Mixin__title {
+  position: relative;
+  z-index: 9;
+  padding: 0 20px 20px;
+  color: #151e2e;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  @media (max-width: 999px) {
+    font-size: 28px;
+    line-height: 130%;
+  }
+  i {
+    position: relative;
+    &:after {
+      width: 110%;
+      height: 8px;
+      position: absolute;
+      left: -4px;
+      bottom: 4px;
+      z-index: -1;
+      background: #2d2ed4;
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#e24997),
+        to(#2d2ed4)
+      );
+      background: linear-gradient(to right, #e24997, #2d2ed4);
+      opacity: 0.5;
+      // background-color: rgba(245, 218, 228, 1);
+      content: "";
+    }
+  }
+}
+
+.Mixin__title-bar {
+  position: relative;
+  padding: 0 20px;
+  color: #151e2e;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+  @media (max-width: 999px) {
+    font-size: 18px;
+    line-height: 140%;
+  }
+  strong {
+    color: #0d6efd;
+    font-weight: 700;
+  }
+  &::before {
+    @include TitleBar(120px);
+  }
+
+  .LaytoutContents__sub & {
+    &:after {
+      width: 50px;
+    }
+  }
+}
+
+.Mixin__title--left,
+.Mixin__title-bar--left {
+  text-align: left;
+}

@@ -1,0 +1,29 @@
+@import "../../../../assets/styles/mixin.scss";
+
+.UsersSwiper {
+  width: 100%;
+  position: relative;
+  padding: 40px 20px 100px;
+  @media (max-width: 999px) {
+    padding: 40px 20px 50px;
+  }
+  .swiper-slide {
+    width: auto;
+  }
+}
+
+.UsersSwiperContents {
+  @include WidthLayout;
+  position: relative;
+  margin: 0 auto;
+}
+
+.usersSwiperItem {
+  padding: 0 50px 0 0;
+  img {
+    height: 40px;
+    @media (max-width: 999px) {
+      height: 30px;
+    }
+  }
+}

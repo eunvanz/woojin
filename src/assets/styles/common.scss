@@ -1,0 +1,12 @@
+.LaytoutContents__sub {
+  width: 1000px;
+  margin: 0 auto;
+  @media (max-width: 999px) {
+    width: auto;
+  }
+}
+
+.Layout__line {
+  margin: 0 24px;
+  border-top: 2px dashed #ebebeb;
+}

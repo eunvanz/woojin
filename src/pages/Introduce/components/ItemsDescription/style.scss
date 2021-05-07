@@ -1,0 +1,59 @@
+.ItemsDescription {
+  position: relative;
+  padding: 100px 0;
+  background-color: #070a57;
+  @media (max-width: 999px) {
+    padding: 50px 0;
+  }
+  &::after {
+    width: 801px;
+    height: 293px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("../../../../assets/images/sub-deco.png") no-repeat;
+    background-size: 100% 100%;
+    content: "";
+  }
+  .Mixin__title-bar {
+    &::before {
+      margin: 0 0 10px;
+      background-color: #fff;
+    }
+  }
+}
+
+.ItemsDescription__inner {
+  position: relative;
+  display: flex;
+  @media (max-width: 999px) {
+    display: block;
+  }
+}
+
+.ItemsDescription__title,
+.ItemsDescription__description {
+  flex-basis: 40%;
+  &:last-child {
+    flex-basis: 60%;
+  }
+
+  .Mixin__title,
+  .Mixin__title-bar {
+    color: #fff;
+  }
+
+  p {
+    padding: 0 20px;
+    color: #868e96;
+    font-size: 17px;
+    line-height: 180%;
+    @media (max-width: 999px) {
+      padding: 30px 20px 0;
+      font-size: 14px;
+    }
+    strong {
+      color: #343851;
+    }
+  }
+}

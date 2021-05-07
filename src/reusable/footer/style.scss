@@ -1,0 +1,121 @@
+@import "../../assets/styles/mixin.scss";
+
+.Footer {
+  margin: 150px 0 0 0;
+  background-color: #151e2e;
+  @media (max-width: 999px) {
+    margin: 100px 0 0 0;
+  }
+}
+
+.FooterContents {
+  @include WidthLayout;
+  display: flex;
+  margin: 0 auto;
+  padding: 35px 0 30px 0;
+  @media (max-width: 999px) {
+    display: block;
+  }
+}
+
+.FooterContentsItem {
+  width: 50%;
+  padding: 0 100px;
+  @media (max-width: 999px) {
+    width: 100%;
+    padding: 0 24px 30px;
+  }
+}
+
+.FooterContentsItem__title {
+  display: block;
+  margin: 0 0 20px 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  @media (max-width: 999px) {
+    font-size: 17px;
+  }
+}
+
+.FooterContentsItem__center-tel {
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 0 0 0 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  background: url("../../assets/images/icon-tel.png") no-repeat 0 8px;
+  background-size: 20px 20px;
+  @media (max-width: 999px) {
+    font-size: 25px;
+  }
+}
+
+.FooterContentsItem__center-list {
+  margin: 20px 0 0 0;
+  li {
+    margin: 0 0 6px 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 120%;
+    @media (max-width: 999px) {
+      font-size: 13px;
+    }
+  }
+}
+
+.FooterContentsItem__info-item {
+  margin: 6px 0 0 0;
+  i {
+    display: inline-block;
+    padding: 0 5px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 13px;
+  }
+  strong,
+  span {
+    padding: 0 2px 0 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 14px;
+    line-height: 120%;
+    @media (max-width: 999px) {
+      font-size: 13px;
+    }
+  }
+  strong {
+    margin: 0 6px 0 0;
+  }
+}
+
+.FooterCopyright {
+  background-color: #0d131c;
+  text-align: center;
+  padding: 15px 15px calc(env(safe-area-inset-bottom) + 15px);
+
+  address {
+    margin: 10px 0;
+    color: #7c8087;
+    font-size: 13px;
+    line-height: 120%;
+    @media (max-width: 999px) {
+      font-size: 12px;
+    }
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 13px;
+    line-height: 120%;
+    @media (max-width: 999px) {
+      font-size: 12px;
+    }
+  }
+
+  img {
+    height: 30px;
+  }
+}
