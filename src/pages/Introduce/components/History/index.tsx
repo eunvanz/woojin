@@ -52,11 +52,11 @@ const History = () => (
               <p>현 사업장으로 사업장 확장 이전</p>
             </div>
             <div className="HistoryTimeline__box">
-              <strong>BHC OEM생산 계약 체결</strong>
+              <strong>BHC 공급 계약 체결</strong>
               <span>
                 <img src={historyBhc} alt="BHC 이미지" />
               </span>
-              <p>BHC그룹 전국 대리점 나무젓가락 OEM생산 계약 체결</p>
+              <p>BHC그룹 장수족발 나무젓가락 공급 계약 체결</p>
             </div>
           </div>
         </div>
