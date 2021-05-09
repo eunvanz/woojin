@@ -6,7 +6,7 @@
   }
   &::before {
     width: 41%;
-    height: 150px;
+    height: 100px;
     position: absolute;
     left: 0;
     top: 0;
@@ -15,7 +15,7 @@
     content: "";
     @media (max-width: 999px) {
       width: 85%;
-      height: 110px;
+      height: 70px;
     }
   }
   &::after {

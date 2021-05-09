@@ -8,8 +8,7 @@ const Greeting = () => (
           <h3 className="Mixin__title Mixin__title--left">
             <strong>안녕하십니까</strong>
             <br />
-            우진위생산업 대표 <br />
-            이의락입니다.
+            우진위생산업 입니다.
           </h3>
           <h4 className="Mixin__title-bar Mixin__title-bar--left">
             좋은 제품과 믿음으로 고객만족을 추구하고, 작은 것 하나 하나 혁신하여

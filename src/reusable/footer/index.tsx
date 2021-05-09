@@ -18,8 +18,8 @@ const Footer = () => (
         <strong className="FooterContentsItem__title">COMPANY INFO</strong>
         <ul className="FooterContentsItem__info">
           <li className="FooterContentsItem__info-item">
-            <strong>법인명 :</strong>
-            <span>WOOJIN LIVING</span>
+            <strong>사업체명 :</strong>
+            <span>우진위생산업</span>
           </li>
           <li className="FooterContentsItem__info-item">
             <strong>사업자등록번호 :</strong>
@@ -28,8 +28,8 @@ const Footer = () => (
           <li className="FooterContentsItem__info-item">
             <strong>주소 :</strong>
             <span>
-              서울특별시 중랑구 신내역로3길 40-36 (신내동) 데시앙플렉스 FB 지하
-              2층 216, 217, 218호
+              서울특별시 중랑구 신내역로3길 40-36 신내데시앙플렉스 B2 216, 217,
+              218호
             </span>
           </li>
           <li className="FooterContentsItem__info-item">

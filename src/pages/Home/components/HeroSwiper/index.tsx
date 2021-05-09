@@ -1,6 +1,6 @@
 import { NavHashLink } from "react-router-hash-link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
 
 import { scrollElementWithOffset } from "../../../../reusable/helpers/scrollElementWithOffset";
 
@@ -9,12 +9,12 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "./style.scss";
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Autoplay]);
 
 const HeroSwiper = () => (
   <div className="HeroSwiper">
     <div className="HeroSwiperContents">
-      <Swiper slidesPerView="auto" navigation loop>
+      <Swiper slidesPerView="auto" navigation loop autoplay={{ delay: 5000 }}>
         <SwiperSlide>
           <div className="HeroSwiperItem">
             <div className="HeroSwiperItem__title">
@@ -23,8 +23,6 @@ const HeroSwiper = () => (
                 <strong>우진위생산업</strong>
               </h2>
               <p>
-                웹사이트에 오신 걸 환영합니다.
-                <br />
                 우진위생산업은 좋은 제품과 신뢰를 최우선으로 생각하는
                 생활위생용품 생산 전문 기업입니다.
               </p>
@@ -33,7 +31,7 @@ const HeroSwiper = () => (
               </span> */}
               <NavHashLink
                 to="/introduce"
-                scroll={el => scrollElementWithOffset(el, 200)}
+                scroll={(el) => scrollElementWithOffset(el, 200)}
               >
                 자세히 보기
               </NavHashLink>
@@ -56,7 +54,7 @@ const HeroSwiper = () => (
               </p>
               <NavHashLink
                 to="/introduce#livingWell"
-                scroll={el => scrollElementWithOffset(el, 200)}
+                scroll={(el) => scrollElementWithOffset(el, 200)}
               >
                 자세히 보기
               </NavHashLink>
@@ -72,14 +70,12 @@ const HeroSwiper = () => (
                 <strong>다양한 제품들</strong>
               </h2>
               <p>
-                우진위생산업의
-                <br />
                 나무젓가락, 이쑤시게, 꼬지, 면봉 등의 각종 생활위생용품과
                 OEM생산 제품들까지 온라인 상에서 구경해보세요.
               </p>
               <NavHashLink
                 to="/products"
-                scroll={el => scrollElementWithOffset(el, 200)}
+                scroll={(el) => scrollElementWithOffset(el, 200)}
               >
                 자세히 보기
               </NavHashLink>

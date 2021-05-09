@@ -14,23 +14,41 @@ import usersLogoSama from "../../../../assets/images/users/users-logo-sama.jpeg"
 import usersLogoSewon from "../../../../assets/images/users/users-logo-sewon.jpeg";
 import usersLogoNh from "../../../../assets/images/users/users-logo-nh.jpeg";
 import usersLogoNongshim from "../../../../assets/images/users/users-logo-nongshim.jpeg";
+import usersLogoCoupang from "../../../../assets/images/users/users-logo-coupang.png";
+import usersLogoBhc from "../../../../assets/images/users/users-logo-bhc.jpeg";
+import usersLogoDeliveryHero from "../../../../assets/images/users/users-logo-delivery-hero.jpeg";
 
 SwiperCore.use([Autoplay]);
 
 const UsersSwiper = () => (
   <div className="UsersSwiper">
-    {/* <h3 className="Mixin__title-bar">
+    <h3 className="Mixin__title-bar">
       우진위생산업은 좋은제품과 합리적인 가격으로 많은 <strong>고객사들</strong>
       과 함께 시장을 선도하고 있습니다.
-    </h3> */}
+    </h3>
     <div className="UsersSwiperContents">
       <Swiper
         slidesPerView="auto"
         loop
         autoplay={{
-          delay: 1000
+          delay: 1000,
         }}
       >
+        <SwiperSlide>
+          <div className="usersSwiperItem">
+            <img src={usersLogoDeliveryHero} alt="딜리버리히어로" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="usersSwiperItem">
+            <img src={usersLogoBhc} alt="BHC" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="usersSwiperItem">
+            <img src={usersLogoCoupang} alt="쿠팡" />
+          </div>
+        </SwiperSlide>
         <SwiperSlide>
           <div className="usersSwiperItem">
             <img src={usersLogoDaiso} alt="다이소" />

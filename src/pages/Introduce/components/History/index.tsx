@@ -11,6 +11,10 @@ import historySewon from "../../../../assets/images/history-sewon.jpeg";
 import historySama from "../../../../assets/images/history-sama.jpeg";
 import historyNabi from "../../../../assets/images/history-nabi.jpeg";
 import historyHat from "../../../../assets/images/history-hat.jpeg";
+import historyFactory2 from "../../../../assets/images/history-factory-2.jpeg";
+import historyCoupang from "../../../../assets/images/history-coupang.png";
+import historyBhc from "../../../../assets/images/history-bhc.png";
+import historyDeliveryHero from "../../../../assets/images/history-delivery-hero.png";
 
 const History = () => (
   <div id="history" className="History">
@@ -21,6 +25,55 @@ const History = () => (
         </h3>
       </div>
       <div className="HistoryTimeline">
+        <div className="HistoryTimeline__row">
+          <div className="HistoryTimeline__date">
+            <strong>2021</strong>
+          </div>
+          <div className="HistoryTimeline__content">
+            <div className="HistoryTimeline__box">
+              <strong>딜리버리히어로 공급 계약 체결</strong>
+              <span>
+                <img src={historyDeliveryHero} alt="딜리버리히어로 이미지" />
+              </span>
+              <p>딜리버리히어로 요기요알뜰쇼핑 공급 계약 체결</p>
+            </div>
+          </div>
+        </div>
+        <div className="HistoryTimeline__row">
+          <div className="HistoryTimeline__date">
+            <strong>2020</strong>
+          </div>
+          <div className="HistoryTimeline__content">
+            <div className="HistoryTimeline__box">
+              <strong>사업장 확장 이전</strong>
+              <span>
+                <img src={historyFactory2} alt="공장 이미지" />
+              </span>
+              <p>현 사업장으로 사업장 확장 이전</p>
+            </div>
+            <div className="HistoryTimeline__box">
+              <strong>BHC OEM생산 계약 체결</strong>
+              <span>
+                <img src={historyBhc} alt="BHC 이미지" />
+              </span>
+              <p>BHC그룹 전국 대리점 나무젓가락 OEM생산 계약 체결</p>
+            </div>
+          </div>
+        </div>
+        <div className="HistoryTimeline__row">
+          <div className="HistoryTimeline__date">
+            <strong>2016</strong>
+          </div>
+          <div className="HistoryTimeline__content">
+            <div className="HistoryTimeline__box">
+              <strong>쿠팡 공급 계약 체결</strong>
+              <span>
+                <img src={historyCoupang} alt="쿠팡 이미지" />
+              </span>
+              <p>리빙웰 브랜드 전 품목 쿠팡 공급 계약 체결</p>
+            </div>
+          </div>
+        </div>
         <div className="HistoryTimeline__row">
           <div className="HistoryTimeline__date">
             <strong>2014</strong>
@@ -38,7 +91,7 @@ const History = () => (
               <span>
                 <img src={historyFactory} alt="공장 이미지" />
               </span>
-              <p>현 사업장으로 사업장 확장 이전</p>
+              <p>구리 사업장 확장 이전</p>
             </div>
           </div>
         </div>
