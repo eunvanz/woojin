@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { useCallback, useEffect, useState } from "react";
 import { NavHashLink } from "react-router-hash-link";
 
 import { scrollElementWithOffset } from "../../reusable/helpers/scrollElementWithOffset";
@@ -18,12 +19,12 @@ const TabItem = ({ item, isActive }: TabItemProps) => {
   return (
     <li
       className={classNames("TabItem", {
-        "TabItem--selected": isActive,
+        "TabItem--selected": isActive
       })}
     >
       <NavHashLink
         to={item.url}
-        scroll={(el) => scrollElementWithOffset(el, 230)}
+        scroll={el => scrollElementWithOffset(el, 230)}
       >
         {item.label}
       </NavHashLink>
@@ -37,8 +38,23 @@ export interface TabProps {
 }
 
 export const Tab = ({ tabData, activeTab }: TabProps) => {
+  const [isTabActive, setIsActive] = useState(false);
+
+  const handleScroll = useCallback(() => {
+    if (window.scrollY || window.pageYOffset > 80) {
+      setIsActive(true);
+    } else {
+      setIsActive(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
   return (
-    <div className="Tab">
+    <div className={classNames("Tab", { active: isTabActive })}>
       <ul className="TabList">
         {tabData.map((item, index) => (
           <TabItem item={item} isActive={activeTab === item.url} key={index} />
