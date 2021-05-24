@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="FooterContents">
       <div className="FooterContentsItem">
         <strong className="FooterContentsItem__title">고객상담센터</strong>
-        <em className="FooterContentsItem__center-tel">02-6949-3414</em>
+        <em className="FooterContentsItem__center-tel">080-860-8388</em>
         <ul className="FooterContentsItem__center-list">
           <li>평일 AM9:00 ~ PM6:00</li>
           <li>토요일 AM9:00 ~ PM12:00</li>
