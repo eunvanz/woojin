@@ -19,12 +19,12 @@ const TabItem = ({ item, isActive }: TabItemProps) => {
   return (
     <li
       className={classNames("TabItem", {
-        "TabItem--selected": isActive
+        "TabItem--selected": isActive,
       })}
     >
       <NavHashLink
         to={item.url}
-        scroll={el => scrollElementWithOffset(el, 230)}
+        scroll={(el) => scrollElementWithOffset(el, 230)}
       >
         {item.label}
       </NavHashLink>
@@ -41,7 +41,12 @@ export const Tab = ({ tabData, activeTab }: TabProps) => {
   const [isTabActive, setIsActive] = useState(false);
 
   const handleScroll = useCallback(() => {
-    if (window.scrollY || window.pageYOffset > 80) {
+    const headerElement = document.querySelector(".Header");
+    const subTitleElement = document.querySelector(".SubTitle");
+    if (
+      (window.scrollY || window.pageYOffset) >
+      subTitleElement!.clientHeight - headerElement!.clientHeight
+    ) {
       setIsActive(true);
     } else {
       setIsActive(false);

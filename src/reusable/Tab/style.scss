@@ -24,9 +24,18 @@
     z-index: 10;
     transition: 0.5;
     background: rgba(255, 255, 255, 0.9);
+    + span {
+      display: block;
+      padding-top: 91px;
+    }
+    + .LayoutContents__sub {
+      padding-top: 151px;
+    }
   }
   @media (max-width: 999px) {
-    top: 128px;
+    &.active {
+      top: 130px;
+    }
   }
 }
 
