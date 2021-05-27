@@ -5,7 +5,9 @@ import ProductsTitle from "../Title";
 
 import "./style.scss";
 
-import chopsticks1 from "../../../../assets/images/products/chopsticks/chopsticks-1.jpeg";
+import image100p from "../../../../assets/images/products/chopsticks/100p.jpg";
+import imageBamboo100p from "../../../../assets/images/products/chopsticks/bamboo-100p.jpg";
+import imageRawBamboo100p from "../../../../assets/images/products/chopsticks/raw-bamboo-100p.jpg";
 import chopsticks2 from "../../../../assets/images/products/chopsticks/chopsticks-2.jpeg";
 import chopsticks3 from "../../../../assets/images/products/chopsticks/chopsticks-3.jpeg";
 import chopsticks4 from "../../../../assets/images/products/chopsticks/chopsticks-4.jpeg";
@@ -137,7 +139,7 @@ const ProductsItemData = [
   //나무젓가락
   {
     group: "chopstick",
-    imgUrl: chopsticks1,
+    imgUrl: image100p,
     label: "리빙웰 나무젓가락 100P",
     description: (
       <div>
@@ -175,6 +177,38 @@ const ProductsItemData = [
         규격 : 21cm
         <br />
         재질 : 백양목
+        <br />
+        원산지 : 중국
+      </div>
+    ),
+  },
+  {
+    group: "chopstick",
+    imgUrl: imageBamboo100p,
+    label: "리빙웰 둥근대나무젓가락 100P",
+    description: (
+      <div>
+        수량 : 100PCS
+        <br />
+        규격 : 21cm
+        <br />
+        재질 : 대나무
+        <br />
+        원산지 : 중국
+      </div>
+    ),
+  },
+  {
+    group: "chopstick",
+    imgUrl: imageRawBamboo100p,
+    label: "리빙웰 비닐포장 둥근대나무젓가락 100P",
+    description: (
+      <div>
+        수량 : 100PCS
+        <br />
+        규격 : 21cm
+        <br />
+        재질 : 대나무
         <br />
         원산지 : 중국
       </div>
