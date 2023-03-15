@@ -1,20 +1,21 @@
-import "./style.scss";
+import './style.scss'
 
-import historyDaiso from "../../../../assets/images/history-daiso.png";
-import historyFactory from "../../../../assets/images/history-factory.jpeg";
-import historyHwami from "../../../../assets/images/history-hwami.jpeg";
-import historyAlpha from "../../../../assets/images/history-alpha.jpeg";
-import historyChopsticks from "../../../../assets/images/history-chopsticks.png";
-import historyWoojinliving from "../../../../assets/images/history-woojinliving.png";
-import historyOfficedepot from "../../../../assets/images/history-officedepot.jpeg";
-import historySewon from "../../../../assets/images/history-sewon.jpeg";
-import historySama from "../../../../assets/images/history-sama.jpeg";
-import historyNabi from "../../../../assets/images/history-nabi.jpeg";
-import historyHat from "../../../../assets/images/history-hat.jpeg";
-import historyFactory2 from "../../../../assets/images/history-factory-2.jpeg";
-import historyCoupang from "../../../../assets/images/history-coupang.png";
-import historyBhc from "../../../../assets/images/history-bhc.png";
-import historyDeliveryHero from "../../../../assets/images/history-delivery-hero.png";
+import historyDaiso from '../../../../assets/images/history-daiso.png'
+import historyFactory from '../../../../assets/images/history-factory.jpeg'
+import historyHwami from '../../../../assets/images/history-hwami.jpeg'
+import historyAlpha from '../../../../assets/images/history-alpha.jpeg'
+import historyChopsticks from '../../../../assets/images/history-chopsticks.png'
+import historyWoojinliving from '../../../../assets/images/history-woojinliving.png'
+import historyOfficedepot from '../../../../assets/images/history-officedepot.jpeg'
+import historySewon from '../../../../assets/images/history-sewon.jpeg'
+import historySama from '../../../../assets/images/history-sama.jpeg'
+import historyNabi from '../../../../assets/images/history-nabi.jpeg'
+import historyHat from '../../../../assets/images/history-hat.jpeg'
+import historyFactory2 from '../../../../assets/images/history-factory-2.jpeg'
+import historyCoupang from '../../../../assets/images/history-coupang.png'
+import historyBhc from '../../../../assets/images/history-bhc.png'
+import historyDeliveryHero from '../../../../assets/images/history-delivery-hero.png'
+import historyAward from '../../../../assets/images/history-award.jpg'
 
 const History = () => (
   <div id="history" className="History">
@@ -25,6 +26,44 @@ const History = () => (
         </h3>
       </div>
       <div className="HistoryTimeline">
+        <div className="HistoryTimeline__row">
+          <div className="HistoryTimeline__date">
+            <strong>2023</strong>
+          </div>
+          <div className="HistoryTimeline__content">
+            <div className="HistoryTimeline__box">
+              <strong>중랑세무서장 표창</strong>
+              <span>
+                <img src={historyAward} alt="수상 이미지" />
+              </span>
+              <p>
+                제57회 납세자의 날 중랑세무서장 표창
+                <br />
+                <a
+                  href="https://s.nts.go.kr/jungnang/prgn/selectPrgnTaxpyerBdInfo.do?prgnNttYear=2023&prgnNttTmeNm=57&mi=4717"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  바로가기
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="HistoryTimeline__row">
+          <div className="HistoryTimeline__date">
+            <strong>2022</strong>
+          </div>
+          <div className="HistoryTimeline__content">
+            <div className="HistoryTimeline__box">
+              <strong>쿠팡 OEM생산 시작</strong>
+              <span>
+                <img src={historyCoupang} alt="쿠팡 이미지" />
+              </span>
+              <p>쿠팡 코멧 나무젓가락 생산 시작</p>
+            </div>
+          </div>
+        </div>
         <div className="HistoryTimeline__row">
           <div className="HistoryTimeline__date">
             <strong>2021</strong>
@@ -223,6 +262,6 @@ const History = () => (
       </div>
     </div>
   </div>
-);
+)
 
-export default History;
+export default History
