@@ -34,6 +34,9 @@
       50% 100%;
     background-size: 1920px 214px;
     content: "";
+    @media (min-width: 1920px) {
+      background-size: 100% 214px;
+    }
   }
 
   .swiper-button-prev,
